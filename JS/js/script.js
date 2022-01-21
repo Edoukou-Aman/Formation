@@ -188,3 +188,76 @@ geo3.taille();
 */
 
 // DOM
+/*
+var tab = document.getElementsByTagName('p');
+alert(tab);
+
+document.getElementById('gros_titre').innerHTML = 'Modification';
+var textePara = document.querySelector('.para').textContent;
+
+
+var newPara = document.createElement('p');
+newPara.id ='nouveau';
+
+// Texte a inséré
+var texte = document.createTextNode('Insérer');
+
+//Insertion dans le 'p'
+newPara.appendChild(texte);
+
+//Insertion dans le 'body'
+document.body.appendChild(newPara);
+
+// Insertion dans une zone de notre choix
+// Au dessus du para1
+var para1 = document.querySelector('.para');
+document.body.insertBefore(newPara, para1);
+
+// Suppression
+var titre = document.getElementById('gros_titre');
+var parent = document.body;
+
+//parent.removeChild(titre);
+
+var newTit = document.createElement('h2');
+newTit.id = 'moyen';
+newTit.innerHTML = 'Titre modifie en Js';
+
+parent.replaceChild(newTit,titre);
+
+var p = document.querySelector('.para');
+var div = p.parentNode;
+
+div.style.color = 'orange';
+
+
+var b = document.body;
+var div = b.childNodes[3]; //les espaces entre les balises sont comptabilisés
+var p1 = b.childNodes[1];  // h1
+
+var texte = p1.childNodes[0].nodeValue; // le contenu de h1 partant du premier elt
+
+alert(texte);
+
+
+var p2 = document.querySelectorAll('.para')[1];
+
+var first = p2.firstChild;
+var end = p2.lastChild;
+var inner1 = first.nodeValue;
+var inner2 = end.innerHTML;
+
+alert(inner1+'\n '+inner2)
+
+
+*/
+
+var titre = document.getElementById('gros_titre');
+var div = titre.nextSibling.nextSibling;
+div.innerHTML = 'Div modifé';
+
+
+
+
+
+// \n
