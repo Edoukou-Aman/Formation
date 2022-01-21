@@ -250,13 +250,12 @@ var inner2 = end.innerHTML;
 alert(inner1+'\n '+inner2)
 
 
-*/
-
 var titre = document.getElementById('gros_titre');
 var div = titre.nextSibling.nextSibling;
 div.innerHTML = 'Div modifé';
 
 
+*/
 
 
 
