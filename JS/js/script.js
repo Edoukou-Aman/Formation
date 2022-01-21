@@ -123,6 +123,20 @@ document.getElementById('p1').innerHTML+= 'Mon nom : ' + user['name'];
 
 
 
+var moi = {
+    prenom : "Kevin",
+    nom : "Aman",
+    age : 22,
+
+    identite : function (){
+        return 'Prénom : '+ this.prenom+
+                '\nnom :'  + this.nom+
+                '\nage : ' + this.age;
+    }
+}
+
+alert(moi.identite());
+
 // CONSTRUCTEUR
 
 function User(n,a,e) {
@@ -143,7 +157,7 @@ console.log(User.prototype);
  */
 
 // CLASSES
-
+/*
 class Ligne {
     constructor(nom, longueur) {
         this.nom = nom;
@@ -171,3 +185,6 @@ let geo3 = new Rectangle('geo3',7,5);
 geo3.aire();
 geo3.taille();
 
+*/
+
+// DOM
